@@ -20,6 +20,14 @@ Conflicts: connman-configs-mer
 %description connman
 %{summary}
 
+%package -n nemo-prjconf
+Summary:    Project configs for nemo repos for OBS
+Provides:   project-config
+
+%description -n nemo-prjconf
+%{summary}.
+
+
 %prep
 %setup -q
 
@@ -32,4 +40,8 @@ rm -rf $RPM_BUILD_ROOT
 %files connman
 %defattr(-,root,root,-)
 %config %{_sysconfdir}/connman/main.conf
+
+%files -n nemo-prjconf
+%defattr(-,root,root,-)
+%{_datadir}/prjconf/*.xml
 

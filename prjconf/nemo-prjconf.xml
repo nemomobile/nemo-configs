@@ -1,0 +1,7 @@
+Release: <CI_CNT>.<B_CNT>.Nemo
+Prefer: nemo-theme-default
+Prefer: mapplauncherd-devel
+Prefer: maliit-framework-wayland-devel
+Prefer: nemo-configs-connman
+Prefer: signon-qt5-devel
+
